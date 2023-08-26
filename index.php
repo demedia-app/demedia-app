@@ -1045,6 +1045,7 @@
                     }
                 </script>
             </div>
+        </div>
     </section>
 
     <!--====== CONTACT PART ENDS ======-->
@@ -1068,7 +1069,7 @@
                             </div>
                             <div class="footer_content mt-8">
                                 <p class="text-white">
-                                DeMedia - a protocol that facilitates the development of decentralized social media platforms.
+                                    DeMedia - a protocol that facilitates the development of decentralized social media platforms.
                                 </p>
                             </div>
                         </div>
