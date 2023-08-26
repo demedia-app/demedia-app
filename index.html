@@ -1284,7 +1284,8 @@
               // Add more documents for the second row as needed
             ];
 
-            function createCard(parentElement, document) {
+            function createCard(parentElement, doc) {
+              // Change parameter name from 'document' to 'doc'
               var col = document.createElement("div");
               col.className = "col-lg-4 col-md-6";
 
@@ -1294,20 +1295,20 @@
               var card = document.createElement("div");
               card.className = "card";
               card.onclick = function () {
-                downloadPDF(document.pdf);
+                downloadPDF(doc.pdf); // Update parameter reference from 'document' to 'doc'
               };
 
               var cardImage = document.createElement("div");
               cardImage.className = "card_image";
               var img = document.createElement("img");
-              img.src = document.image;
-              img.alt = document.title;
+              img.src = doc.image; // Update parameter reference from 'document' to 'doc'
+              img.alt = doc.title; // Update parameter reference from 'document' to 'doc'
               cardImage.appendChild(img);
 
               var content = document.createElement("div");
               content.className = "content";
               var h3 = document.createElement("h3");
-              h3.textContent = document.title;
+              h3.textContent = doc.title; // Update parameter reference from 'document' to 'doc'
               content.appendChild(h3);
 
               card.appendChild(cardImage);
@@ -1317,15 +1318,17 @@
               parentElement.appendChild(col);
             }
 
+            function createRow(parentElement, documents) {
+              documents.forEach(function (document) {
+                createCard(parentElement, document);
+              });
+            }
+
             var row1 = document.getElementById("document-row-1");
-            documents.forEach(function (document) {
-              createCard(row1, document);
-            });
+            createRow(row1, documents);
 
             var row2 = document.getElementById("document-row-2");
-            documents2.forEach(function (document) {
-              createCard(row2, document);
-            });
+            createRow(row2, documents2);
 
             function downloadPDF(pdfUrl) {
               var link = document.createElement("a");
