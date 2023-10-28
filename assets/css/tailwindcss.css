@@ -1415,7 +1415,7 @@ a, button {
 }
 
 .hero_shape {
-  opacity: 0.4;
+  opacity: 0.1;
   position: absolute;
   z-index: -10;
 }
