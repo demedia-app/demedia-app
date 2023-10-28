@@ -3644,62 +3644,57 @@
 
 .download-link {
   text-decoration: none;
-  color: #428bca;
+  color: #13e1bd;
   font-weight: bold;
 }
 
 .download-link:hover {
   text-decoration: underline;
 }
-
-.faq-heading{
-  border-bottom: #777;
-  /* padding: 20px 60px; */
-}
-
-
-.faq-container{
+/* FAQ Container */
+.faq-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
-  }
-  .hr-line{
-  /* width: 60%; */
-  margin: auto;
-  
-  }
-  /* Style the buttons that are used to open and close the faq-page body */
-  .faq-page {
-    /* background-color: #eee; */
-    color: #444;
-    cursor: pointer;
-    padding: 30px 20px;
-    width: 80%;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin: auto;
-  
-  }
+  gap: 10px; /* Add some vertical spacing between FAQ items */
+}
 
-  
-  
-  /* Style the faq-page panel. Note: hidden by default */
-  .faq-body {
-    /* padding: 0 18px; */
-    background-color: white;
-    display: none;
-    overflow: hidden;
-  }
-  
-  .faq-page:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 10px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-  }
-  
- 
+/* Style for FAQ Questions */
+.faq-page {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* Style for FAQ Answers (FAQ Body) */
+.faq-body {
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove the horizontal line separator */
+.hr-line {
+  display: none;
+}
+
+/* Adjust the "+" icon alignment to the end */
+.faq-page::after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: #007BFF; /* Change the color of the "+" icon */
+  margin-left: 10px; /* Add spacing between the question text and the "+" icon */
+}
+
+
