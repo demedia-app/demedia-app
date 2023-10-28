@@ -26,6 +26,6 @@ for (i = 0; i < faq.length; i++) {
 }
 
 // Initialize the first question as active
-currentQuestion.classList.add("active");
-var firstAnswer = currentQuestion.nextElementSibling;
-firstAnswer.style.display = "block";
+// currentQuestion.classList.add("active");
+// var firstAnswer = currentQuestion.nextElementSibling;
+// firstAnswer.style.display = "block";
