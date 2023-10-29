@@ -3682,8 +3682,18 @@
 }
 
 /* Remove the horizontal line separator */
-.hr-line {
-  display: none;
+.toggle-icon {
+  cursor: pointer;
+}
+
+.faq-page::after {
+  content: "+"; /* Plus icon */
+  float: right;
+  font-weight: bold;
+}
+
+.faq-page.active::after {
+  content: "-"; /* Minus icon when active */
 }
 
 

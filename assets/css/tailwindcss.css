@@ -93,7 +93,9 @@ hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
 }
-
+hr.hr-line {
+  display: none;
+}
 /*
 Text-level semantics
 ====================
