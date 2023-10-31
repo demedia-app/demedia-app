@@ -10025,6 +10025,7 @@ a, button {
 
 /* =========== pricing ============= */
 
+
 .pricing_menu .active {
   --tw-bg-opacity: 1;
   background-color: rgb(19, 225, 189, var(--tw-bg-opacity));
