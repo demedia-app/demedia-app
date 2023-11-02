@@ -24,3 +24,6 @@ for (i = 0; i < faq.length; i++) {
         currentQuestion = this;
     });
 }
+
+// docs
+

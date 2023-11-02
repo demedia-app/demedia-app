@@ -328,12 +328,12 @@
         <div class="w-full sm:w-10/12 md:w-6/12 lg:w-3/12">
           <div class="single_services text-center mt-8 mx-3">
             <div class="services_icon">
-              
+
               <!-- Add an image as the icon with a rounded background -->
               <div class="">
                 <img src="./assets/images/data-cleansing.png" alt="Icon Image">
               </div>
-              
+
             </div>
             <div class="services_content mt-5 xl:mt-10">
               <h3 class="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">
@@ -348,7 +348,7 @@
           </div>
           <!-- single services -->
         </div>
-      
+
 
         <!-- <div class="w-full sm:w-10/12 md:w-6/12 lg:w-3/12">
           <div class="single_services text-center mt-8 mx-3">
@@ -467,7 +467,7 @@
           </div>
           <!-- single services -->
         </div>
-        
+
         <div class="w-full sm:w-10/12 md:w-6/12 lg:w-6/12">
           <div class="single_services text-center mt-8 mx-3">
             <div class="services_icon">
@@ -530,14 +530,14 @@
                             fill="#f94f4f" />
                         </svg>
                       </div>
-                    
+
                       <div class="pricing_content mt-6">
                         <span class="pricing_price font-bold text-black text-4xl">$0/mo</span>
                         <ul class="mt-4 leading-9">
                           <li>Self Hosting</li>
                           <li>Only Text Content Allowd</li>
                           <li>Community Support</li>
-                          
+
 
                         </ul>
                         <a href="#contact" class="main-btn pricing_btn">Choose Plan</a>
@@ -702,27 +702,32 @@
           <div class="faq-one">
             <h3 class="faq-page">What is DeMedia?</h3>
             <div class="faq-body">
-              <p>DeMedia is a decentralized social media protocol that empowers users by allowing them to store their personal information on their own devices, providing greater control over their data and content.</p>
+              <p>DeMedia is a decentralized social media protocol that empowers users by allowing them to store their
+                personal information on their own devices, providing greater control over their data and content.</p>
             </div>
           </div>
           <hr class="hr-line">
-          
+
           <div class="faq-two">
             <h3 class="faq-page">Why DeMedia?</h3>
             <div class="faq-body">
-              <p>DeMedia empowers users by allowing them to store their personal information on their own devices, providing greater control over their data and content. This helps users protect their privacy and strengthen their security by avoiding the drawbacks of centralized data storage.</p>
+              <p>DeMedia empowers users by allowing them to store their personal information on their own devices,
+                providing greater control over their data and content. This helps users protect their privacy and
+                strengthen their security by avoiding the drawbacks of centralized data storage.</p>
             </div>
           </div>
           <hr class="hr-line">
-          
+
           <div class="faq-three">
             <h3 class="faq-page">How do DeMedia work?</h3>
             <div class="faq-body">
-              <p>DeMedia works by distributing control and ownership among users rather than relying on a single entity. This means that users have direct control over their data and content, which is stored on a distributed network of computers.</p>
+              <p>DeMedia works by distributing control and ownership among users rather than relying on a single entity.
+                This means that users have direct control over their data and content, which is stored on a distributed
+                network of computers.</p>
             </div>
           </div>
         </div>
-        
+
 
         <div class="w-full sm:w-10/12 md:w-6/12 lg:w-6/12">
           <div class="faq-four">
@@ -771,7 +776,7 @@
 
   <!-- FAQ -->
 
-  <!--====== Tools PART START ======-->  
+  <!--====== Tools PART START ======-->
   <section id="tools" class="work_area bg-gray pt-120 pb-120">
     <div class="container">
       <div class="row justify-center">
@@ -873,17 +878,19 @@
         <div class="section_title text-center pb-6">
           <h5 class="sub_title">What are our documents</h5>
           <h4 class="main_title">DeMedia Documents</h4>
-          
+
         </div>
       </div>
-      
+
       <!-- container -->
       <div class="container">
+        <button id="toggleRow1" class="toggle-button">Toggle Row 1</button>
         <div class="row justify-center" id="document-row-1">
           <!-- <h4 class="secondary_title">Project Registration Documents</h4> -->
         </div>
 
         <!-- Add a new row for the second row of cards with the same structure -->
+        <button id="toggleRow2" class="toggle-button">Toggle Row 2</button>
         <div class="row justify-center" id="document-row-2">
           <!-- <h4 style="text-align: center;" class="secondary_title">Project Proposal</h4> -->
         </div>
@@ -905,6 +912,26 @@
         </div>
 
         <script>
+          // toggle view
+          document.getElementById("toggleRow1").addEventListener("click", function () {
+            var row = document.getElementById("document-row-1");
+            if (row.style.display === "none") {
+              row.style.display = "flex";
+            } else {
+              row.style.display = "none";
+            }
+          });
+
+          document.getElementById("toggleRow2").addEventListener("click", function () {
+            var row = document.getElementById("document-row-2");
+            if (row.style.display === "none") {
+              row.style.display = "flex";
+            } else {
+              row.style.display = "none";
+            }
+          });
+
+
 
           // resize pdf images to 150x150
           function resizeImages() {
@@ -914,9 +941,9 @@
               images[i].style.width = "150px";
             }
           }
-          
+
           var documents = [{
-            image: "assets/files/pdf.jpg",
+              image: "assets/files/pdf.jpg",
               pdf: "assets/files/TAF.pdf",
               title: "Topic Assessment",
             },
@@ -949,7 +976,7 @@
               pdf: "assets/files/proposal/2023-234_IT20157432.pdf",
               title: "Proposal Presentation - IT20157432",
             },
-            
+
           ];
 
           var documents3 = [{
@@ -972,7 +999,7 @@
               pdf: "assets/files/status/IT20157432.pdf",
               title: "Status Document-IT20157432",
             },
-            
+
           ];
 
           var documents4 = [{
@@ -989,11 +1016,10 @@
           ];
 
           var documents5 = [{
-              image: "assets/files/pdf.jpg",
-              pdf: "assets/files/DeMedia_Decentralized-social-media-protocol.pdf",
-              title: "Research Paper"
-            },
-          ];
+            image: "assets/files/pdf.jpg",
+            pdf: "assets/files/DeMedia_Decentralized-social-media-protocol.pdf",
+            title: "Research Paper"
+          }, ];
 
           var documents6 = [{
               image: "assets/files/pdf.jpg",
@@ -1001,7 +1027,7 @@
               title: "Final Report - Team"
             },
             {
-            image: "assets/files/pdf.jpg",
+              image: "assets/files/pdf.jpg",
               pdf: "assets/files/final/IT20254698_2023-234_Final_Report.pdf",
               title: "Final Report - IT20254698",
             },
@@ -1204,13 +1230,13 @@
                   <img src="assets/images/SithumAyya.jpg" alt="team" class="w-full" />
                   <ul class="social absolute top-4 right-8">
                     <li>
-                      <a href="#"><i class="lni lni-facebook-filled"></i></a>
+                      <a href="https://www.facebook.com/sithumonline"><i class="lni lni-facebook-filled"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="lni lni-twitter-filled"></i></a>
+                      <a href="https://twitter.com/sithumonline"><i class="lni lni-twitter-filled"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="lni lni-linkedin-original"></i></a>
+                      <a href="https://www.linkedin.com/in/sithumonline"><i class="lni lni-linkedin-original"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -1262,13 +1288,13 @@
                   <img style="height: 382px;" src="assets/images/savii.jpg" alt="team" class="w-full" />
                   <ul class="social absolute top-4 right-8">
                     <li>
-                      <a href="#"><i class="lni lni-facebook-filled"></i></a>
+                      <a href="https://web.facebook.com/savindya.dhananjani.9/?_rdc=1&_rdr"><i class="lni lni-facebook-filled"></i></a>
                     </li>
                     <li>
                       <a href="#"><i class="lni lni-twitter-filled"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="lni lni-linkedin-original"></i></a>
+                      <a href="https://lk.linkedin.com/in/savindya-dhananjani-0430a5217"><i class="lni lni-linkedin-original"></i></a>
                     </li>
                   </ul>
                 </div>
