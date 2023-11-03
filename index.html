@@ -883,31 +883,35 @@
       </div>
 
       <!-- container -->
-      <div class="container">
-        <button id="toggleRow1" class="toggle-button">Toggle Row 1</button>
-        <div class="row justify-center" id="document-row-1">
+      <div class="container" style="justify-content:center;">
+        <button id="toggleRow1" class="toggle-button">Topic Assessment</button>
+        <div class="row justify-center" id="document-row-1" style="display: none;">
           <!-- <h4 class="secondary_title">Project Registration Documents</h4> -->
         </div>
 
         <!-- Add a new row for the second row of cards with the same structure -->
-        <button id="toggleRow2" class="toggle-button">Toggle Row 2</button>
-        <div class="row justify-center" id="document-row-2">
+        <button id="toggleRow2" class="toggle-button">Proposal Presentation</button>
+        <div class="row justify-center" id="document-row-2" style="display: none;">
           <!-- <h4 style="text-align: center;" class="secondary_title">Project Proposal</h4> -->
         </div>
 
-        <div class="row justify-center" id="document-row-3">
+        <button id="toggleRow3" class="toggle-button">Status Documents</button>
+        <div class="row justify-center" id="document-row-3" style="display: none;">
           <!-- <h4 class="secondary_title">Status Docoument</h4> -->
         </div>
 
-        <div class="row justify-center" id="document-row-4">
+        <button id="toggleRow4" class="toggle-button">Progress Presentation</button>
+        <div class="row justify-center" id="document-row-4" style="display: none;">
           <!-- <h4 class="secondary_title">Progress Presentations</h4> -->
         </div>
 
-        <div class="row justify-center" id="document-row-5">
+        <button id="toggleRow5" class="toggle-button">Research Paper</button>
+        <div class="row justify-center" id="document-row-5" style="display: none;">
           <!-- <h4 class="secondary_title">Reserach Paper</h4> -->
         </div>
 
-        <div class="row justify-center" id="document-row-6">
+        <button id="toggleRow6" class="toggle-button">Final Report</button>
+        <div class="row justify-center" id="document-row-6" style="display: none;">
           <!-- <h4 class="secondary_title">Final Reports</h4> -->
         </div>
 
@@ -924,6 +928,42 @@
 
           document.getElementById("toggleRow2").addEventListener("click", function () {
             var row = document.getElementById("document-row-2");
+            if (row.style.display === "none") {
+              row.style.display = "flex";
+            } else {
+              row.style.display = "none";
+            }
+          });
+
+          document.getElementById("toggleRow3").addEventListener("click", function () {
+            var row = document.getElementById("document-row-3");
+            if (row.style.display === "none") {
+              row.style.display = "flex";
+            } else {
+              row.style.display = "none";
+            }
+          });
+
+          document.getElementById("toggleRow4").addEventListener("click", function () {
+            var row = document.getElementById("document-row-4");
+            if (row.style.display === "none") {
+              row.style.display = "flex";
+            } else {
+              row.style.display = "none";
+            }
+          });
+
+          document.getElementById("toggleRow5").addEventListener("click", function () {
+            var row = document.getElementById("document-row-5");
+            if (row.style.display === "none") {
+              row.style.display = "flex";
+            } else {
+              row.style.display = "none";
+            }
+          });
+
+          document.getElementById("toggleRow6").addEventListener("click", function () {
+            var row = document.getElementById("document-row-6");
             if (row.style.display === "none") {
               row.style.display = "flex";
             } else {
